@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="bootstrap-icons-1.13.1/bootstrap-icons.min.css">
+</head>
+<body>
+    <!--========================== STYLE SWITCHER ===========================-->
+        <input type="radio" name="color" id="color-1">
+        <input type="radio" name="color" id="color-2">
+        <input type="radio" name="color" id="color-3">
+        <input type="radio" name="color" id="color-4">
+        <input type="radio" name="color" id="color-5">
+        <input type="checkbox" id="toggler">
+        <input type="checkbox" id="day-night">
+
+        <div class="style-switcher">
+            <label for="toggler" class="style-switcher-toggler ">
+                <i class="bi bi-gear-fill spin-icon"></i>
+            </label>
+
+            <label for="day-night" class="day-night">
+                <i class="bi bi-moon"></i>
+                <i class="bi bi-sun"></i>
+            </label>
+
+            <h4>Theme Colors</h4>
+            <div class="colors">
+                <label for="color-1" class="color-1 color"></label>
+                <label for="color-2" class="color-2 color"></label>
+                <label for="color-3" class="color-3 color"></label>
+                <label for="color-4" class="color-4 color"></label>
+                <label for="color-5" class="color-5 color"></label>
+            </div>
+        </div>
+
+    <!--=============== HEADER ==================-->
+    <div class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav_logo">Cloé</a>
+
+            <input type="checkbox" id="nav_toggler">
+
+            <label for="nav_toggler" class="nav_toggle">
+                <i class="bi bi-list"></i>
+                <i class="bi bi-x"></i>
+            </label>
+
+            <ul class="nav_list">
+                <li class="nav_item">
+                    <a href="#home" class="nav_link active-link">Home</a>
+                </li>
+
+                <li class="nav_item">
+                    <a href="#about" class="nav_link">A propos</a>
+                </li>
+
+                <li class="nav_item">
+                    <a href="#skills" class="nav_link">Compétences</a>
+                </li>
+
+                <li class="nav_item">
+                    <a href="#services" class="nav_link">Services</a>
+                </li>
+
+                <li class="nav_item">
+                    <a href="#portfolio" class="nav_link">Portfolio</a>
+                </li>
+
+                <li class="nav_item">
+                    <a href="#contacts" class="nav_link">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--======================== MAIN ==============================-->
+    <main class="main">
+        <!--========================= HOME =========================-->
+        <section class="home" id="home">
+            <div class="home_container container grid">
+                <div class="home_content">
+                    <span class="home_small">Hello,</span>
+                    <h1 class="home_title">
+                        <span>Je suis</span> Cloé, <br>
+                        une <span>jeune web developpeuse</span>
+                    </h1>
+
+                    <p class="home_description">
+                       Conceptrice web actuellement étudiante à IUT(Institut Universitaire des technologies) de Douala en filière Génie Informatique; Mon expertise consiste à créer des sites web attrayants et conviviaux, ainsi que des flyers pour vos évènements. Passionnée par le code et le détail, j'ai le sens du détail et bien plus encore...
+                    </p>
+
+                    <div class="home_btns">
+                        <a href="#contacts" class="btn">Hire Me</a>
+                        <a href="#portfolio" class="btn btn-transparent">Portfolio</a>
+                    </div>
+                </div>
+
+                <!-- <div class="home_img-wrapper">
+                    <img src="assets/img/loic.jpg" alt="" class="home_img">
+                </div> -->
+            </div>
+        </section>
+
+        <!--======================= ABOUT ==========================-->
+        <section class="about section" id="about">
+            <div class="about_container container grid">
+                <!-- <div class="about_img-wrapper">
+                    <img src="assets/img/moi.jpg" alt="" class="about_img">
+                </div> -->
+
+                <div class="about_content">
+                    <h2 class="section_title" data-title="Qui suis je ?">
+                        Je suis Mouil Ommal Ange Cloé, une jeune web developpeuse et designer UI/UX 
+                    </h2>
+
+                    <p class="about_description"> Depuis que j'ai découverte la programmation, j'ai eu à faire divers mini projets. Mon objectif est de créer des solutions élégantes et efficaces qui répondent aux besoins des utilisateurs tout en restant à la pointe de la technologie. Avec plusieurs formations en Développement web, design; j'ai acquis des compétences dans des technologies comme HTML, CSS, JavaScript, php,... des outils de conception graphique comme Figma. Mon approche est toujours orientée vers l'utilisateur et la performance, et je mets un point d'honneur à proposer des interfaces intuitives et réactives. Mon objectif est de continuer à évoluer dans ce domaine en constante évolution et de contribuer à des projets qui font la différence. J'adore relever de nouveaux défis et je suis toujours à la recherche d'opportunités pour apprendre et grandir professionnellement.</p>
+
+                    <ul class="about_data grid">
+                        <li class="data_item">
+                            <h3 class="data_title">Noms:</h3>
+                            <span class="data_description"> MOUIL OMMAL</span>
+                        </li>
+
+                        <li class="data_item">
+                            <h3 class="data_title">Prenoms:</h3>
+                            <span class="data_description"> ANGE CLOE</span>
+                        </li>
+
+                        <li class="data_item">
+                            <h3 class="data_title">Age:</h3>
+                            <span class="data_description">18 ans</span>
+                        </li>
+
+                        <li class="data_item">
+                            <h3 class="data_title">Statut:</h3>
+                            <span class="data_description">Etudiante</span>
+                        </li>
+
+                        <li class="data_item">
+                            <h3 class="data_title">Email:</h3>
+                            <span class="data_description about_link">ommalmouil07@gmail.com</span>
+                        </li>
+
+                        <li class="data_item">
+                            <h3 class="data_title">Freelance:</h3>
+                            <span class="data_description">Disponible</span>
+                        </li>
+                    </ul>
+
+                    <div class="about_bottom">
+                        <a href="" class="btn">Telecharger CV</a>
+
+                        <div class="about_socials-links">
+                            <a href="https://wa.me/678791567" class="about_social-link">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+
+                            <a href="https://https://www.linkedin.com/in/cloé-mouil-596ba1383" class="about_social-link">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+
+                            <a href="https://github.com/fortune-cloe" class="about_social-link">
+                                <i class="bi bi-github"></i>
+                            </a>
+
+                            <a href="https://www.tiktok.com/@angel_sys15" class="about_social-link">
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== QUALIFICATIONS ====================-->
+        <section class="qualification section">
+            <h2 class="section_title title-center" data-title="Mon parcours">Qualification</h2>
+            <div class="qualification_container container grid">
+                <div class="education">
+                    <h3 class="qualification_title"> 
+                       <i class="bi bi-grad"></i> Education</h3>
+
+                    <div class="timeline">
+                        <div class="timeline_item">
+                            <div class="circle_dot"></div>
+                            <h3 class="timeline_title">DUT-2</h3>
+                            <p class="timeline_text">Actuellement, je suis étudiante en deuxième année dans la filière  Génie Informatique à l'institut Universitaire des technologies</p>
+                            <span class="timeline_date"><i class="bi bi-calendar2-fill"></i> 2025 - 2026</span>
+                        </div>
+                    
+                        <div class="timeline_item">
+                            <div class="circle_dot"></div>
+                            <h3 class="timeline_title">DUT-1</h3>
+                            <p class="timeline_text">Entré en première année à l'Insitut Universitaire des Technologies en filière Génie informatique</p>
+                            <span class="timeline_date"><i class="bi bi-calendar2-fill"></i>2024 - 2025</span>
+                        </div>
+        
+                        <div class="timeline_item">
+                            <div class="circle_dot"></div>
+                            <h3 class="timeline_title">Baccalauréat C</h3>
+                            <p class="timeline_text">Obtention de mon baccalauréat à la Fondation Kamtchoum Ndami</p>
+                            <span class="timeline_date"><i class="bi bi-calendar2-fill"></i>2023 - 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience">
+                    <h3 class="qualification_title">Experience</h3>
+
+                    <div class="timeline">
+                        <div class="timeline_item">
+                            <div class="circle_dot"></div>
+                            <h3 class="timeline_title">Sololearn</h3>
+                            <p class="timeline_text">J'ai fait une formation en developpement web sur sololearn où j'ai eu un certificat</p>
+                            <span class="timeline_date"><i class="bi bi-calendar2-fill"></i>2025</span>
+                        </div>
+    
+                        <div class="timeline_item">
+                            <div class="circle_dot"></div>
+                            <h3 class="timeline_title">Sololearn</h3>
+                            <p class="timeline_text">J'ai fait une formation en vibe coding sur sololearn où j'ai eu un certificat.</p>
+                            <span class="timeline_date"><i class="bi bi-calendar2-fill"></i> 2025</span>
+                        </div>
+                
+                        <div class="timeline_item">
+                            <div class="circle_dot"></div>
+                            <h3 class="timeline_title">Formation en génie logiciels</h3>
+                            <p class="timeline_text">J'ai effectué une formation de deux semaines en genie logiciel où j'ai développé mes compétences en html, css, dans la structure Komepe.</p>
+                            <span class="timeline_date"><i class="bi bi-calendar2-fill"></i>2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--======================== Skills ========================-->
+        <section class="skills section" id="skills"> 
+            <h2 data-title="Mes competences" class="section_title title-center">Mes compétences</h2>
+
+            <div class="skills_container container grid">
+                <div class="skills_tabs">
+                    <div class="skills_header skills_active" data-target="#frontend">
+                        <i class="bi bi-brackets-curly skills_icon"></i>
+
+                        <div>
+                            <h1 class="skills_title">Frontend Developper</h1>
+                        </div>
+
+                        <i class="bi bi-chevron-down skills_arrow"></i>
+                    </div>
+
+                    <div class="skills_header" data-target="#design">
+                        <i class="bi bi-switchbook skills_icon"></i>
+
+                        <div>
+                            <h1 class="skills_title">UI/UX design</h1>
+                        </div>
+
+                        <i class="bi bi-chevron-down skills_arrow"></i>
+                    </div>
+
+                    <div class="skills_header" data-target="#backend">
+                        <i class="bi bi-server-network skills_icon"></i>
+
+                        <div>
+                            <h1 class="skills_title">Backend Developper</h1>
+                        </div>
+
+                        <i class="bi bi-chevron-down skills_arrow"></i>
+                    </div>
+                </div>
+
+                <div class="skills_content">
+                    <div class="skills_group skills_active" data-content id="frontend">
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">HTML</h3>
+                                    <span class="skills_number">95%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 95%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">CSS</h3>
+                                    <span class="skills_number">85%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 85%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">JAVASCRIPT</h3>
+                                    <span class="skills_number">60%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 60%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">REACT</h3>
+                                    <span class="skills_number">50%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 50%;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills_group" data-content id="design">
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Figma</h3>
+                                    <span class="skills_number">75%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 75%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Illustrator</h3>
+                                    <span class="skills_number">45%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 45%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Photoshop</h3>
+                                    <span class="skills_number">60%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 60%;"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="skills_group" data-content id="backend">
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">PHP</h3>
+                                    <span class="skills_number">60%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 60%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Python</h3>
+                                    <span class="skills_number">70%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 70%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">MySQL</h3>
+                                    <span class="skills_number">65%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 65%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Firebase</h3>
+                                    <span class="skills_number">50%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 50%;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===================== Services =========================-->
+        <section class="services section" id="services">
+            <h2 data-title="Services" class="section_title title-center">Ce que je peux faire</h2>
+
+            <div class="services_container container grid">
+                <div class="services_item">
+                    <i class="bi bi-code-slash services_icon"></i>
+
+                    <div class="services_title">Developpement web & mobile</div>
+                    <p class="services_description">Je conçois et développe des sites et applications modernes, rapides et sécurisés, adaptés à vos besoins. Que ce soit un site vitrine, une application web, mobile ou une plateforme e-commerce, j'assure une expérience utilisateur optimale avec des technologies récentes (HTML, CSS, JavaScript, PHP, etc.).</p>
+                </div>
+
+                <div class="services_item">
+                    <i class="bi bi-laptop services_icon"></i>
+
+                    <div class="services_title">CMS</div>
+                    <p class="services_description">Je développe des sites web sur WordPress pour vous offrir une solution clé en main, facile à gérer et optimisée pour le référencement. Avec des thèmes personnalisés et des extensions adaptées, votre site sera performant et unique.</p>
+                </div>
+
+                <div class="services_item">
+                    <i class="bi bi-pencil-square services_icon"></i>
+
+                    <div class="services_title">UI/UX Design</div>
+                    <p class="services_description">Mes services en web design : Conception UI/UX pour une navigation fluide, maquettage et prototypage (Figma, Adobe XD) Design adapté à tous les écrans (responsive), flyers pour vos évènements.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--======================= portfolio ======================-->
+        <section class="portfolio section" id="portfolio">
+            <h2 data-title="Portfolio" class="section_title title-center">Mes derniers Projets</h2>
+            <div class="work_container container grid">
+                <div class="work_card">
+                    <img src="assets/img/ma calculatrice.PNG" alt="" class="work_img">
+
+                    <div class="work_details">
+                        <h3 class="work_title">App de calculatrice</h3>
+                        <span class="work_description"><a href="https://cloe-calculator.netlify.app/">Voir l'appli</a></span>
+                    </div>
+                </div>
+
+                <div class="work_card">
+                    <img src="assets/img/outfit sunday.jpg" alt="" class="work_img">
+
+                    <div class="work_details">
+                        <h3 class="work_title">Flyers concert</h3>
+                        <span class="work_description"><a href="assets/img/outfit sunday.jpg">Voir le flyers</a></span>
+                    </div>
+                </div>
+
+                <div class="work_card">
+                    <img src="assets/img/maquette.PNG" alt="" class="work_img">
+
+                    <div class="work_details">
+                        <h3 class="work_title">Maquette pour un site d'église</h3>
+                        <span class="work_description"><a href="assets/img/maquette.PNG">Voir le prototype</a></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--======================== Contacts ======================-->
+        <section class="contact section" id="contacts">
+
+            <h2 data-title="contacts" class="section_title title-center">Me contacter</h2>
+
+            <div class="contact_container container grid">
+
+                <div class="contact_details">
+                    <div class="contact_item">
+                        <i class="bi bi-telephone contact_icon"></i>
+
+                        <div>
+                            <h3 class="contact_title">Appelez-moi</h3>
+                            <span class="contact_data">+237 678-79-15-67</span>
+                        </div>
+                    </div>
+
+                    <div class="contact_item">
+                        <i class="bi bi-envelope contact_icon"></i>
+
+                        <div>
+                            <h3 class="contact_title">Envoyez un email</h3>
+                            <span class="contact_data">ommalmouil07@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact_item">
+                        <i class="bi bi-geo-alt-fill contact_icon"></i>
+
+                        <div>
+                            <h3 class="contact_title">Adresse</h3>
+                            <span class="contact_data">Douala, Logbaba</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact_form">
+                    <div class="form_group">
+                        <div class="form_input">
+                            <input type="text" id="nom" class="input_control" required>
+                            <label for="nom">Nom</label>
+                            <span>Nom</span>
+                        </div>
+
+                        <div class="form_input">
+                            <input type="email" class="input_control" required>
+                            <label for="nom">Email</label>
+                            <span>Email</span>
+                        </div>
+                    </div>
+
+                    <div class="form_input">
+                        <input type="text" class="input_control">
+                        <label for="nom">Sujet</label>
+                        <span>Sujet</span>
+                    </div>
+
+                    <div class="form_input">
+                        <textarea name="" id="message" class="input_control textarea"></textarea>
+                        <label class="input" for="message">Message</label>
+                        <span>Message</span>
+                    </div>
+
+                    <button type="submit"class="btn contact_btn">Envoyer un message</button>
+                </form>
+
+            </div>
+        </section>
+
+        <!--======================== Footer ========================-->
+        <footer class="footer">
+            <div class="footer_container container">
+                <p class="footer_copyright">&copy; 2025 Cloé. Tous droits réservés</p>
+
+                <div class="footer_socials-links">
+                    <a href="https://wa.me/678791567" class="footer_social-link">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+
+                    <a href="https://https://www.linkedin.com/in/cloé-mouil-596ba1383" class="footer_social-link">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+
+                    <a href="https://github.com/fortune-cloe" class="footer_social-link">
+                        <i class="bi bi-github"></i>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@angel_sys15" class="footer_social-link">
+                        <i class="bi bi-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </main>
+
+
+
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
