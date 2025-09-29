@@ -509,34 +509,36 @@
                     </div>
                 </div>
 
-                <form action="" class="contact_form">
+                <form action="" id="contact_form" class="contact_form">
                     <div class="form_group">
                         <div class="form_input">
-                            <input type="text" id="nom" class="input_control" required>
-                            <label for="nom">Nom</label>
+                            <input type="text" id="contact_name" name="name" class="input_control" required>
+                            <label for="contact_name">Nom</label>
                             <span>Nom</span>
                         </div>
 
                         <div class="form_input">
-                            <input type="email" class="input_control" required>
-                            <label for="nom">Email</label>
+                            <input type="email" name="email" id="contact_email" class="input_control" required>
+                            <label for="contact_email">Email</label>
                             <span>Email</span>
                         </div>
                     </div>
 
                     <div class="form_input">
-                        <input type="text" class="input_control">
-                        <label for="nom">Sujet</label>
+                        <input type="text" name="subject" id="contact_subject" class="input_control" required>
+                        <label for="contact_subject">Sujet</label>
                         <span>Sujet</span>
                     </div>
 
                     <div class="form_input">
-                        <textarea name="" id="message" class="input_control textarea"></textarea>
-                        <label class="input" for="message">Message</label>
+                        <textarea name="message" id="contact_message" class="input_control textarea" required></textarea>
+                        <label class="input" for="contact_message">Message</label>
                         <span>Message</span>
                     </div>
 
-                    <button type="submit"class="btn contact_btn">Envoyer un message</button>
+                    <input type="submit" class="btn contact_btn" value="Envoyez un message">
+
+                    <p class="error_message" id="error_message"></p>
                 </form>
 
             </div>
@@ -572,7 +574,8 @@
     </main>
 
 
-
+    <!--========================== EMAIL JS =================-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <script src="assets/js/main.js"></script>
 
