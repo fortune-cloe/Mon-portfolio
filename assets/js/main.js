@@ -59,3 +59,64 @@ window.addEventListener('scroll', () => {
         document.querySelector('.style-switcher').classList.remove('open');
     }
 })
+
+
+//====================== CONTACT FORM =====================//
+
+const contactForm = document.getElementById('contact_form');
+const contactName = document.getElementById('contact_name');
+const contactEmail = document.getElementById('contact_email');
+const contactSubject = document.getElementById('contact_subject');
+const contactMessage = document.getElementById('contact_message');
+const errorMessage = document.getElementById('error_message');
+
+const sendEmail = (e) => {
+    e.preventDefault();
+
+    const emailInput = document.getElementById('contact_email').value.trim();
+    const validDomains = /^[\w.-]+@(?:gmail\.com|yahoo\.com|outlook\.com)$/i;
+    if(!validDomains.test(emailInput)){
+        alert('Adresse non valide. Utilisez une adresse gmail, yahoo ou outlook.');
+        return;
+    }
+
+    // check si l'input a une valeur
+    // if(
+    //     contactName.value === '' ||
+    //     contactEmail.value === '' || 
+    //     contactSubject.value === '' || 
+    //     contactMessage.value === ''
+    // ) {
+    //     //show message
+    //     errorMessage.textContent ='veuill';
+    // }
+    // else{
+        // serviceID - templateID - #form - publickey
+        emailjs.sendForm(
+            'service_ggxoxgm',
+            'template_ic6acld',
+            '#contact_form',
+            'NwPhRXdQLP6n69q7N'
+        ).then(() => {
+            //show message and add color
+            errorMessage.classList.add('color-first');
+            errorMessage.textContent = 'Message envoyé ✔';
+
+            //retirer le message après 5secondes
+            setTimeout(() => {
+                errorMessage.textContent = '';
+            }, 5000);
+        }, (error) => {
+            alert('OOPS! Quelque chose ne va pas, veuillez vérifier votre connexion internet.', error);
+        });
+
+        //clear input fields
+
+        contactName.value = '';
+        contactEmail.value ='';
+        contactSubject.value = '';
+        contactMessage.value ='';
+    // }
+};
+
+contactForm.addEventListener('submit', sendEmail);
